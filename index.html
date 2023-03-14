@@ -29,9 +29,65 @@
       background-color: white;
       color: black;
     }
+    .popup {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+    }
+    .popup-content {
+      width: 80%;
+      height: 80%;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .popup-content h1 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .popup-content p {
+      font-size: 1.5em;
+      text-align: center;
+    }
+    .popup-content button {
+      margin-top: 20px;
+      padding: 10px;
+      font-size: 1.5em;
+      font-weight: bold;
+      background-color: lightgray;
+      border: none;
+      cursor: pointer;
+    }
   </style>
+  <script>
+    window.onload = function() {
+      var popup = document.getElementById('popup');
+      var confirmBtn = document.getElementById('confirm-btn');
+      confirmBtn.addEventListener('click', function() {
+        popup.style.display = 'none';
+      });
+    }
+  </script>
 </head>
 <body>
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <h1>公告</h1>
+      <p>“电信网络诈骗”是严重侵害公民的合法权益和财产安全的违法犯罪行为！<br>店内所有套餐虽然免费申请（无开卡费），但这些手机卡与你本地线下办理的毫无区别（归属地除外）！<br>所以请规范自己的行为，勿贩卖个人或者他人的手机卡，参与或间接参与法律明文禁止的任何违法犯罪活动！</p>
+      <button id="confirm-btn">我已知晓</button>
+    </div>
+  </div>
   <iframe src="https://91haoka.cn/91haoka_platform/#/minishop?share_id=440016&shop_name=%25E6%25B5%2581%25E9%2587%258F%25E5%258D%25A11973" frameborder="0" style="width: 100%; height: 100vh;"></iframe>
   <div id="menu">
     <a href="https://i.328888.xyz/2023/03/09/SYoRp.jpeg">人工客服</a>
