@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>“逆天卡”福利领取</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .announcement {
+      background-color: #f5f5f5;
+      padding: 20px;
+      margin: 60% auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      overflow: auto;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .link {
+      padding: 10px;
+      background-color: #f0f0f0;
+      margin-bottom: 10px;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .link:hover {
+      background-color: #ccc;
+    }
+
+    .cancel {
+      cursor: pointer;
+      color: blue;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="announcement">
+      <p><b>此页面只限“逆天卡”福利领取<b><br><br>50GB流量100%成功！<br><br>如10GB无法领取，请下月再试！不保证100%成功。</p>
+      <p class="cancel">我已知晓</p>
+    </div>
+    <div class="links">
+      <a href="https://yx.nx.189.cn/s/a/n2A3Ev" class="link" class="link">首冲/续约地址</a>
+      <a href="https://yx.nx.189.cn/m_lx2020xhzw/index_incard_brandnew_23.do" class="link">50GB流量</a>
+      <a href="https://lm.189.cn/netcard/xingcardwelfare/xingcardwelfare.html#/index?shopid=152881494&cmpid=jt-yxhd-2jdclhdlqgzh" class="link" class="link">10GB流量</a>
+    </div>
+  </div>
+
+  <script>
+    const cancelBtn = document.querySelector('.cancel');
+    const announcement = document.querySelector('.announcement');
+
+    cancelBtn.addEventListener('click', () => {
+      announcement.style.display = 'none';
+    });
+  </script>
+</body>
+</html>
+
