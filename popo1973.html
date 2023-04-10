@@ -593,6 +593,57 @@ POPO
 <body>
 </body>
 </html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>浏览量标题栏</title>
+	<style>
+		/* 设置标题栏样式 */
+		#view-counter {
+			position: fixed; /* 设置标题栏固定位置 */
+			top: 0.5%; /* 距顶部2% */
+			right: 0.5%; /* 距右侧1% */
+			left: 87%; /* 距左侧95% */
+			background-color: rgba(255, 255, 255, 0.9); /* 背景颜色为90%磨砂透明白色 */
+			color: #000; /* 字体颜色为黑色 */
+			padding: 10px; /* 设置内边距 */
+			border-radius: 5px; /* 设置圆角边框 */
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* 添加阴影效果 */
+			animation: breathe 4s ease-in-out infinite; /* 添加呼吸跳动效果 */
+		}
+		
+		/* 设置标题栏的呼吸跳动动画 */
+		@keyframes breathe {
+			0% {
+				transform: scale(1);
+			}
+			50% {
+				transform: scale(1.1);
+			}
+			100% {
+				transform: scale(1);
+			}
+		}
+	</style>
+</head>
+<body>
+	<!-- 添加标题栏 -->
+	<div id="view-counter">浏览量：0</div>
+	
+	<script>
+		// 获取当前页面的浏览量
+		let viewCount = localStorage.getItem('viewCount') || 0;
+		
+		// 更新浏览量
+		viewCount++;
+		localStorage.setItem('viewCount', viewCount);
+		
+		// 将浏览量显示在标题栏中
+		document.getElementById('view-counter').innerHTML = '浏览：' + viewCount;
+	</script>
+</body>
+</html>
 
 
 
