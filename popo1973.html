@@ -626,25 +626,3 @@ POPO
 			}
 		}
 	</style>
-</head>
-<body>
-	<!-- 添加标题栏 -->
-	<div id="view-counter">浏览量：0</div>
-	
-	<script>
-		// 获取当前页面的浏览量
-		let viewCount = localStorage.getItem('viewCount') || 0;
-		
-		// 更新浏览量
-		viewCount++;
-		localStorage.setItem('viewCount', viewCount);
-		
-		// 将浏览量显示在标题栏中
-		document.getElementById('view-counter').innerHTML = '浏览：' + viewCount;
-	</script>
-</body>
-</html>
-
-
-
- 
