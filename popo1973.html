@@ -1,8 +1,6 @@
 <title>流量卡POPO的店铺</title>
-<span id="pageviews">0</span>
 
 
-<!DOCTYPE html>
 <html>
 <head>
 	<title>翻牌式轮播和图片轮播</title>
@@ -117,7 +115,7 @@
 		<div id="slider">
 			<div class="slides">
 				<div class="slide"><img src="https://img1.imgtp.com/2023/04/13/5Qu4Hg7s.jpg"></div>
-				<div class="slide">哦<img src="https://img1.imgtp.com/2023/04/13/lnaIGrSp.jpg"></div>
+				<div class="slide"><img src="https://img1.imgtp.com/2023/04/13/lnaIGrSp.jpg"></div>
 				
 			</div>
 			<div id="prev"><</div>
@@ -151,7 +149,11 @@
 		document.querySelector('#slider .slides').style.left = offset + 'px';
 		currentSlide = slideIndex;
 	}
-
+	
+// 自动轮播
+	var intervalId = setInterval(function() {
+		goToSlide(currentSlide + 1);
+	}, 5000);
 	// 左右箭头切换图片
 	prev.addEventListener('click', function() {
 		goToSlide(currentSlide - 1);
@@ -293,36 +295,6 @@
     <div style="margin-left: 10px;">
       <a href="https://www.gantanhao.vip/webapp/merchant/templet1.html?share_id=440016&id=3406341" style="display: inline-block; background-color: #ccc; padding: 5px 10px; color: #333; font-size: 16px; font-weight: bold;"><p style="font-size: 200%;">免费申领</p></a>
 </div>
-
-
-</div></div>
-
-
-</div></div>
-<div style="border: 2px solid #000; padding: 10px;">
-  <div style="display: flex; align-items: center;">
-    <div style="margin-right: 10px;">
-      <a href="https://www.gantanhao.vip/webapp/gantanhaoluodi/index.html?share_id=440016&id=4125123">
-        <img src="https://img1.imgtp.com/2023/04/09/srotbyvC.jpg"  alt="Thumbnail">
-      </a>
-<html>
-    </div>
-    <div style="flex: 1;">
-      <font size="2" color="blue"><p><b><h1><p style="font-size: 150%;">扶摇卡（长期）</p>选靓号</h1><b>
-      <font size="2" color="black"</p><p style="font-size: 150%;">长期套餐：官方自动续约</p>
-<font size="2" color="black"</p><p style="font-size: 200%;">月租59元 <br>204G全国通用流量+100分钟</p>
-   <font size="2" color="black"</p><p style="font-size: 150%;">可提前选号</p>
-    
-   
- </div>
-    <div style="margin-left: 10px;">
-      <a href="https://www.gantanhao.vip/webapp/gantanhaoluodi/index.html?share_id=440016&id=4125123" style="display: inline-block; background-color: #ccc; padding: 5px 10px; color: #333; font-size: 16px; font-weight: bold;"><p style="font-size: 200%;">免费申领</p></a>
-    </div>
-
-
-
-
-
   </div></div>
 <div style="border: 2px solid #000; padding: 10px;">
   <div style="display: flex; align-items: center;">
@@ -368,15 +340,6 @@
     <div style="margin-left: 10px;">
       <a href="https://popocard.github.io/changwan.html" style="display: inline-block; background-color: #ccc; padding: 5px 10px; color: #333; font-size: 16px; font-weight: bold;"><p style="font-size: 200%;">免费申领</p></a>
     </div>
-
-
-
-
-
-  </div>
-
-
-
 </div></div>
 <div style="border: 2px solid #000; padding: 10px;">
   <div style="display: flex; align-items: center;">
